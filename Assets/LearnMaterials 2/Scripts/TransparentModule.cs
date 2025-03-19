@@ -6,7 +6,13 @@ using UnityEngine;
 [HelpURL("https://docs.google.com/document/d/1Cmm__cbik5J8aHAI6PPaAUmEMF3wAcNo3rpgzsYPzDM/edit?usp=sharing")]
 public class TransparentModule : MonoBehaviour
 {
+    [Header("Модуль")]
+    [SerializeField]
+    private bool debug;
+    [SerializeField]
+    [Min(0)]
     private float changeSpeed;
+
 
     private float defaultAlpha;
     private Material mat;
@@ -19,6 +25,7 @@ public class TransparentModule : MonoBehaviour
         toDefault = false;
     }
 
+    [ContextMenu("Активировать")]
     public void ActivateModule()
     {
         float target = toDefault ? defaultAlpha : 0;
@@ -27,6 +34,7 @@ public class TransparentModule : MonoBehaviour
         toDefault = !toDefault;
     }
 
+    [ContextMenu("Вернуть назад")]
     public void ReturnToDefaultState()
     {
         toDefault = true;
