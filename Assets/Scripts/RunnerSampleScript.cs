@@ -7,7 +7,7 @@ public class RunnerSampleScript : MonoBehaviour
     [SerializeField]
     private List<SampleSript> Scipts;
 
-    [ContextMenu("Запуск скриптов")]
+    [ContextMenu("Activate scripts")]
     public void UseScripts()
     {
         foreach (SampleSript s in Scipts)
