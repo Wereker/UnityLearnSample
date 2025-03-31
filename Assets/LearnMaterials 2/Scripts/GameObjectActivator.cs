@@ -22,7 +22,6 @@ public class GameObjectActivator : MonoBehaviour
             item.defaultValue = item.targetGO.activeSelf;
         }
     }
-
     [ContextMenu("arise")]
     public void ActivateModule()
     {
