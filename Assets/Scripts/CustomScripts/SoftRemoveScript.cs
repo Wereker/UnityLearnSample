@@ -9,10 +9,14 @@ public class SoftRemoveScript : SampleSript
 {
     [SerializeField]
     private Transform target;
+
+    [SerializeField]
     private float scale = 5f;
+
+    [SerializeField]
     private float duration = 3f;
 
-    [ContextMenu("Активировать")]
+    [ContextMenu("Activate")]
     public override void Use()
     {
         StartCoroutine(ResizeAndDestroy(target.localScale / scale));

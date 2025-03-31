@@ -4,7 +4,7 @@ using UnityEngine;
 [HelpURL("https://docs.google.com/document/d/1rdTEVSrCcYOjqTJcFCHj46RvnbdJhmQUb3gHMDhVftI/edit?usp=sharing")]
 public class ScalerModule : MonoBehaviour
 {
-    [Header("sasi")]
+    [Header("Module")]
 
     [SerializeField]
     private Vector3 targetScale = new Vector3(2,2,2);
@@ -26,7 +26,7 @@ public class ScalerModule : MonoBehaviour
         toDefault = false;
     }
 
-    [ContextMenu("wakey wakey")]
+    [ContextMenu("arise")]
     public void ActivateModule()
     {
         Vector3 target = toDefault ? defaultScale : targetScale;

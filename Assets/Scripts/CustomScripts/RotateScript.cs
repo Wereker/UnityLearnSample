@@ -17,7 +17,7 @@ public class RotateScript : SampleSript
     [SerializeField]
     private Transform target;
 
-    [ContextMenu("erect")]
+    [ContextMenu("Erect")]
     public override void Use()
     {
         StartCoroutine(RotateAroundAxis());
